@@ -20,6 +20,21 @@
     <img src="./styles/images/company-logo.png" alt="your employment" class="img-fluid">
 </nav>
 
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <img ng-click="enlargeImg('randomDetail.jpg')" src="./styles/images/randomDetail.jpg" style="width: 150px;" alt="" class="img-fluid">
+
+        </div>
+    </div>
+</div>
+
+
+
+<div ng-hide="userClicked" ng-click="closeImg()" id="fw-container" class="d-flex justify-content-center align-items-center">
+    <img ng-src="./styles/images/{{imgName}}" alt="" class="img-fluid w-75">
+</div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
